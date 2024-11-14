@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto Binary Options</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-up {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-down {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="priceChart"></canvas>
+        <div class="buttons">
+            <button class="btn btn-up" onclick="placeBet('up')">⬆️ UP</button>
+            <button class="btn btn-down" onclick="placeBet('down')">⬇️ DOWN</button>
+        </div>
+        <input type="number" id="betAmount" placeholder="Enter bet amount">
+    </div>
+
+    <script>
+        // Initialize Telegram WebApp
+        const webapp = window.Telegram.WebApp;
+        webapp.ready();
+        
+        // Chart initialization code will go here
+        // WebSocket connection for real-time price updates will go here
+        // Betting logic will go here
+    </script>
+</body>
+</html> 
